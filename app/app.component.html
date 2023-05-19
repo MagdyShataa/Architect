@@ -1,0 +1,18 @@
+
+
+
+
+
+  <div class="w3-bar w3-border w3-card-2 w3-light">
+<nav>
+  <a id="home" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+  <a id="about" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
+
+  <a id="contact" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact </a>
+  <a id="projects" routerLink="/projects" routerLinkActive="active" ariaCurrentWhenActive="page"> Projects</a>
+</nav>
+</div>
+<hr>
+<div [@routeAnimations]="getRouteAnimationData()">
+  <router-outlet></router-outlet>
+</div>
